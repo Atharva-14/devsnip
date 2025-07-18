@@ -4,6 +4,7 @@ export interface ISnippet extends Document {
   code: string;
   description: string;
   tags: string[];
+  title: string;
   language: string;
   aiExplaination?: string;
   createdAt: Date;
@@ -13,6 +14,7 @@ const SnippetSchema: Schema = new Schema<ISnippet>({
   code: { type: String, required: true },
   description: { type: String, required: true },
   tags: { type: [String], required: true },
+  title: { type: String, required: true },
   language: { type: String, required: true },
   aiExplaination: { type: String },
   createdAt: {

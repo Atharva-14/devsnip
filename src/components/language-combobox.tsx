@@ -42,7 +42,7 @@ export function LanguageCombobox({ onLanguageChange }: LanguageComboboxProps) {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[200px] justify-between"
+          className="w-[200px] justify-between bg-[#374151] text-white hover:bg-[#374160] cursor-pointer hover:text-white border-none"
         >
           {value
             ? languages.find((language) => language.value === value)?.label
